@@ -1,0 +1,55 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+testui
+
+# cmake generated stuff
+Makefile
+CMakeFiles
+CMakeCache.txt
+cmake_install.cmake
+
+# visual studio stuff
+.vs
+.vscode
+*.vcxproj*
+ui.dir
+ui.sln
+x64
+testui.dir
+gui.dir
+Debug
+Release
+out
+testui.exe.dir
+
+
