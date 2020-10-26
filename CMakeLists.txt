@@ -3,8 +3,8 @@ project (stock_ticker)
 
 if(NOT EXISTS ./depend)
 	execute_process(COMMAND git clone git@github.com:Marinoland/marinoland_depend.git depend)
-	execute_process(COMMAND cmake . WORKING_DIRECTORY depend)
 endif()
+execute_process(COMMAND cmake . WORKING_DIRECTORY depend)
 
 if(WIN32)
     set(CMAKE_WIN32_EXECUTABLE ON)
@@ -12,7 +12,7 @@ if(WIN32)
     set(UI_INCLUDE
         ${UI_FRAMEWORK_DIR}
     )
-    set(UI_LINK ${CMAKE_CURRENT_SOURCE_DIR}/depend/gui)
+    set(UI_LINK ${CMAKE_CURRENT_SOURCE_DIR}/depend/gui/Release)
     set(UI_DEFS )
     set(UI_LIBS gui)
 ELSE()
