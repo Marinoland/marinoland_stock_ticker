@@ -24,3 +24,4 @@ target_link_libraries(
     stock_ticker
     ${DEP_LIBS}
 )
+file(COPY alphavantage.cer DESTINATION ${CMAKE_CURRENT_SOURCE_DIR}/Release/rootcerts/)
